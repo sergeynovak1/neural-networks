@@ -12,8 +12,9 @@ neural-networks/
 │   └── feedforward-networks/      # Прямые нейронные сети
 │       └── three-layer-perceptron/ # Трехслойный персептрон
 ├── foundations/                  # Основы нейронных сетей и теории
-│   ├── intelligent-agents/        # Типы интеллектуальных агентов
-│   │   └── agent-types.md        # Классификация агентов
+│   ├── ai-concepts/              # Основные концепции ИИ
+│   │   ├── machine-learning-types/ # Типы машинного обучения
+│   │   └── intelligent-agents/   # Типы интеллектуальных агентов
 │   ├── neuron-models/            # Вычислительные модели нейронов
 │   │   ├── hodgkin-huxley/       # Модель Ходжкина-Хаксли
 │   │   ├── izhikevich-polychronization/ # Модель Ижикевича
@@ -27,15 +28,25 @@ neural-networks/
 
 #### Foundations (`foundations/`)
 Основные теоретические концепции и модели нейронных сетей:
-- Модели нейронов (Макка洛克-Питтс, Розенблатт, Ходжкин-Хаксли и др.)
+
+##### AI Concepts (`foundations/ai-concepts/`)
+- Типы машинного обучения
+  - [Обучение с учителем](foundations/ai-concepts/machine-learning-types/supervised-learning/) - предсказание на размеченных данных
+  - [Обучение без учителя](foundations/ai-concepts/machine-learning-types/unsupervised-learning/) - поиск скрытых структур
+  - [Обучение с подкреплением](foundations/ai-concepts/machine-learning-types/reinforcement-learning/) - обучение через взаимодействие со средой
+  - [Сравнение типов](foundations/ai-concepts/machine-learning-types/comparison.md) - подробное сравнение всех типов
+- Типы интеллектуальных агентов
+  - [Классификация агентов по Норвигу и Расселу](foundations/ai-concepts/intelligent-agents/agent-types.md) - полная классификация
+
+##### Neuron Models (`foundations/neuron-models/`)
+- Вычислительные модели нейронов
   - [Модель Маккалока-Питтса](foundations/neuron-models/mcculloch-pitts/) - первая математическая модель нейрона
   - [Персептрон Розенблатта](foundations/neuron-models/rosenblatt/) - первая обучающаяся нейронная модель
   - [Модель Ходжкина-Хаксли](foundations/neuron-models/hodgkin-huxley/) - биологически точная модель
   - [Модель Ижикевича](foundations/neuron-models/izhikevich-polychronization/) - эффективная модель спайковых нейронов
   - [Сравнение моделей](foundations/neuron-models/README.md) - подробное сравнение всех моделей
-- Основы искусственного интеллекта и агентов
-  - [Фундаментальные концепции ИИ](foundations/ai-fundamentals.md) - базовые понятия об агентах и средах
-  - [Типы интеллектуальных агентов](foundations/intelligent-agents/agent-types.md) - классификация агентов по Норвигу и Расселу
+- Основы искусственного интеллекта
+  - [Фундаментальные концепции ИИ](foundations/ai-fundamentals.md) - базовые понятия
 
 #### Architectures (`architectures/`)
 Различные архитектуры нейронных сетей:
